@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "1957188f-45ce-4b9d-85cc-1a0f39cf4ac2",
+		"name": "SimpleChat",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "NegotiateLocal",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/negotiate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"negotiate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Talk local",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/talk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"talk"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
