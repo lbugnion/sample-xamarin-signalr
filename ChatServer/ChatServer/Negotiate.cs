@@ -11,6 +11,7 @@ namespace ChatServer
         public static SignalRConnectionInfo GetSignalRInfo(
             [HttpTrigger(
                 AuthorizationLevel.Anonymous,
+                "get",
                 Route = "negotiate")]
             HttpRequest req,
             [SignalRConnectionInfo(HubName = "simplechat")]
