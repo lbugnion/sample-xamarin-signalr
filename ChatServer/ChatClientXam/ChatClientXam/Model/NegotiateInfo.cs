@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Runtime.Serialization;
 
-namespace ChatClientXam
+namespace ChatClientXam.Model
 {
     public class NegotiateInfo
     {
