@@ -12,6 +12,7 @@ namespace ChatServer
             [HttpTrigger(
                 AuthorizationLevel.Anonymous,
                 "get",
+                "post",
                 Route = "negotiate")]
             HttpRequest req,
             [SignalRConnectionInfo(HubName = "simplechat")]
