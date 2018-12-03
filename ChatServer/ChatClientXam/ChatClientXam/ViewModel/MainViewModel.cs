@@ -179,7 +179,10 @@ namespace ChatClientXam.ViewModel
                 TimeReceived = DateTime.Now
             };
 
-            Messages.Insert(0, newMessage);
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                Messages.Insert(0, newMessage);
+            });
         }
 
         public void RaisePropertyChanged([CallerMemberName]string propertyName = "")
