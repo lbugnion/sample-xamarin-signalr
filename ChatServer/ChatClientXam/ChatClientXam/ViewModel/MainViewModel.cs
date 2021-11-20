@@ -139,16 +139,8 @@ namespace ChatClientXam.ViewModel
             {
                 IsBusy = true;
 
-                var client = new HttpClient();
-                var negotiateJson = await client.GetStringAsync($"{HostName}/api/negotiate");
-
-                var negotiateInfo = JsonConvert.DeserializeObject<NegotiateInfo>(negotiateJson);
-
                 _connection = new HubConnectionBuilder()
-                    .WithUrl(negotiateInfo.Url, options =>
-                    {
-                        options.AccessTokenProvider = async () => negotiateInfo.AccessToken;
-                    })
+                    .WithUrl($"{HostName}/api")
                     //.ConfigureLogging(builder =>
                     //{
                     //    builder.AddConsole();
